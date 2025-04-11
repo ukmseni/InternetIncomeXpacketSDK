@@ -877,7 +877,7 @@ start_containers() {
     if [ "$container_pulled" = false ]; then
       if [ ! -f sdk.zip ]; then
         echo "[+] Download PacketSDK ZIP..."
-        wget -O sdk.zip hhttps://github.com/ukmseni/InternetIncomeXpacketSDK/raw/refs/heads/main/packet_sdk_linux-1.0.2.zip
+        wget -O sdk.zip https://github.com/ukmseni/InternetIncomeXpacketSDK/raw/refs/heads/main/packet_sdk_linux-1.0.2.zip
       fi
 
       echo "[+] Buat Dockerfile PacketSDK..."
